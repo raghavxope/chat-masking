@@ -1,6 +1,8 @@
 #encoding tecnique
+
+
 chara=raw_input("enter a sentence")
-print(type(chara))
+
 thisdic={
   "a":"apple",
   "b":"bag",
@@ -31,7 +33,7 @@ thisdic={
 }
 elist=[]
 
-nlist=[]
+
 
 pos=0
 
@@ -39,12 +41,8 @@ while pos!=len(chara):
     gg=thisdic[chara[pos]]
     elist.append((pos,gg))
     pos=pos+1
+print(elist)
 
-p=0
-while p!=len(elist):
-    nlist.append(thisdic.get(elist[p]))
-    p=p+1
-for x in nlist:
-    print(x)
+
 
 
