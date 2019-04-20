@@ -39,7 +39,7 @@ pos=0
 
 while pos!=len(chara):
     gg=thisdic[chara[pos]]
-    elist.append((pos,gg))
+    elist.append((gg))
     pos=pos+1
 print(elist)
 
