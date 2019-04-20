@@ -36,13 +36,13 @@ nlist=[]
 pos=0
 
 while pos!=len(chara):
-    gg=chara[pos]
-   # elist.insert[pos,gg]
+    gg=thisdic[chara[pos]]
+    elist.append((pos,gg))
     pos=pos+1
 
 p=0
 while p!=len(elist):
-    nlist[p]=thisdic.get(elist[p])
+    nlist.append(thisdic.get(elist[p]))
     p=p+1
 for x in nlist:
     print(x)
