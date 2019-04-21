@@ -1,6 +1,10 @@
+
+from __future__ import print_function
+    
 #encoding tecnique
 
-chara=raw_input("enter a sentence")
+chara=input("enter a sentence")
+print("")
 
 thisdic={
   "a":"apple",
@@ -41,11 +45,14 @@ while pos!=len(chara):
     gg=thisdic[chara[pos]]
     elist.append((gg))
     pos=pos+1
-print(elist)
-dlist=list(elist)
-#decoding 
 
+for y in elist: print(y, end =" ")
+ 
+
+#decoding 
+print("")
 print("decoding")
+
 
 def get_key(val): 
     for key, value in thisdic.items(): 
@@ -53,19 +60,14 @@ def get_key(val):
              return key 
   
     return "key doesn't exist"
-    
+   
+
 p=0
-
-
-while p!=len(dlist):
-  jj=dlist[p]
-  hh=get_key(jj)
-  dlist.append(hh)
+while p!=len(elist):
+  jj=elist[p]
+  dlist.append(get_key(jj))
   p=p+1
 
+
 for x in dlist:
-  print(x)
-
-
-
-
+  print(x, end =" ")
